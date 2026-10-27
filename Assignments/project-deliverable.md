@@ -38,7 +38,7 @@ In your team's repo on GitHub you must have a CI workflow with the following cha
 - Provides quick feedback
 - Is repeatable and deterministic
 
-We have provided [instructions for CI/CD pipeline]({{site.baseurl}}{% link Activities/Module12 Activity.md %}) setup separately.
+We will provide instructions for CI/CD pipeline setup separately.
 
 ### Project Plan on Issue Tracking Software
 
