@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Demos for Section 12
-permalink: /assignments/sec-4-demos
+permalink: /assignments/sec-12-demos
 parent: Final Project Grading
 nav_order: 10
 ---
 
-# Specifications for Live Presentations (Sec 4, Prof. Wand)
+# Specifications for Live Presentations (Section 12, Prof. Wand)
 
 Each group will present a live demo for the final project. You can imagine this as the live presentation that you would make if you were standing in front of your poster/flier at a conference. Imagine your target audience as a recruiter for a software engineering role: your goal is to demonstrate that you have some experience working on some non-trivial software engineering project. 
 
