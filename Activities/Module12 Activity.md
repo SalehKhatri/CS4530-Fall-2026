@@ -22,15 +22,37 @@ In this activity, we will focus on building a continuous deployment pipeline, bu
 
 There are three pre-requisites for this activity.
 
-### GitHub Repository
+### GitHub Repository (via Pawtograder)
 
-Your team's deployment must take place within a private GitHub repository in our GitHub Classroom. To create your repository, each member of your team should follow these instructions (please review the instructions carefully first):
+Your team's deployment must take place within your team's private project repository, which is created and managed by [Pawtograder](https://docs.pawtograder.com). You do not create this repository yourself on GitHub: Pawtograder creates one repository per project group inside the course GitHub organization and gives every member of the group access to it.
 
-1. Sign in to GitHub.com, and then use [our invitation](https://classroom.github.com/a/vWAG9U_Y) to create a repository with the GameNite codebase. Check to see if one of your groupmates has already created a group - if so, select it to join it. Otherwise, create a repo using the format `su26-group-xyy` where X is your section number and YY is your group number. Be sure that your group number has the correct format (e.g., su25-group-101)
+### Forming your project group
 
-2. Check your email for the invitation to join the repo. After that, refresh the page, and it will show a link to your new repository, for example: https://github.com/neu-cs4530/summer26-project-group-xyy. Click the link to navigate to your new repository. This is the repository you will use for the project. Be sure that your repo name uses the format mentioned above and doesn't include duplicate words.
+Your group is formed on the project assignment's page in Pawtograder. **Exactly one member of your team creates the group, and every other member joins that group.** Please coordinate with your team before you start so that only one group is created; if two teammates each create a group, one of them will need to leave their group and join the other.
 
-This repository will be private, and visible only to your team and the course staff. After the semester ends, you will be welcome to make it public - you will have complete administrative control of the repository.
+**One student creates the group:**
+
+1. Open the project assignment in Pawtograder and click **Create a new group**.
+2. Name the group using your group number in the format `XYY`, where X is your section number and YY is your group number (e.g., `101` for section 1, group 01). Double-check the number: course staff use this name to identify your team.
+3. Optionally, invite your teammates to the group directly from the **Create a new group** dialog. They will receive an email and a Pawtograder notification. You can also invite them later by clicking **Invite other students** on the assignment page.
+
+**Every other student joins that group,** in one of two ways:
+
+- **Accept an invitation:** If your teammate invited you, click **Join a group** on the assignment page. Your invitations are listed first; click **Accept**. You are added to the group immediately.
+- **Request to join:** If you were not invited, click **Join a group**, find your team's group (your group number, e.g., `101`) under **Select a group to request to join**, and click **Request to Join Group**. Any current member of the group can then approve your request under **Approve or decline join requests** in the group details. Only request to join _your own_ team's group.
+
+Once you are in the group, the assignment page will read "You are in group XYY" and list all of its members. Check that every member of your team appears in this list.
+
+{: .warning }
+Pay attention to the group formation deadline shown in Pawtograder. After it passes, you will not be able to create, join, approve requests for, or leave a group. If you need to change groups after the deadline, contact the course staff.
+
+#### Accessing your group's repository
+
+When all members have joined the group, Pawtograder gives **each member collaborator access** to the group's project repository on GitHub, which contains the GameNite codebase. You can find the link to the repository on the project assignment's page in Pawtograder, or on Pawtograder's **GitHub Help** page (in the **Support & Documentation** menu in the top-right corner), which lists every repository your GitHub account should be able to open.
+
+If you cannot see or open the repository, make sure you are signed in to GitHub with the same account that is linked to Pawtograder. If the repository is still missing, click **Sync GitHub Account** on Pawtograder's [GitHub Help](https://docs.pawtograder.com/students/github-help) page (this can be done once per day), and contact the course staff if that does not resolve it.
+
+This repository will be private, and visible only to your team and the course staff.
 
 ### MongoDB Account
 
@@ -44,9 +66,9 @@ After you register you will be asked to verify your email. The steps on how to c
 
 Render.com is a cloud platform that simplifies deploying and hosting web applications, APIs, and databases. It automatically manages servers, scaling, and security, allowing developers to easily build, deploy, and run applications without worrying about infrastructure management.
 
-You can create a Render.com account [here](https://dashboard.render.com/register). Clicking on the "GitHub" button and sign up using the **same GitHub account** as the one used to create the GitHub project repository.
+You can create a Render.com account [here](https://dashboard.render.com/register). Click on the "GitHub" button and sign up using the **same GitHub account that is linked to your Pawtograder account** (the account that has collaborator access to your group's project repository).
 
-After you register you will be asked to verify your email. You might be asked to authorize the Render app for the "neu-cs4530" organization - choose your repository using the "Only select repositories" option, DO NOT choose "All repositories".
+After you register you will be asked to verify your email. You might be asked to authorize the Render app for the "neu-cs4530" organization - choose your group's project repository using the "Only select repositories" option, DO NOT choose "All repositories".
 
 ## Steps
 
@@ -59,7 +81,7 @@ You will first create the MongoDB database, and then setup the continuous deploy
 3. Click on the "Create" button on the center of the screen. (If you don't see a "Create" button, make sure you are in the "Project Overview" section on the left navigation)
 4. In the configuration options:
    1. Choose the "Free" tier.
-   2. For the Name, provide a name such as "db-cs4530-summer26-XYY" (where XYY is your group number).
+   2. For the Name, provide a name such as "db-cs4530-fa26-XYY" (where XYY is your group number).
    3. Keep the Provider and Region the default values.
 5. Click on "Create Deployment".
 6. You will be prompted about connecting to your database.
@@ -70,7 +92,7 @@ You will first create the MongoDB database, and then setup the continuous deploy
 8. Your current public IP address will be automatically present. Click the "EDIT" button, and then click "ALLOW ACCESS FROM ANYWHERE". (If you don't see this button, you can paste `0.0.0.0/0` as a new Access List Entry.) Click the "Confirm" button.
 9. Click on the "Clusters" option in the left navigation. Then, click on the "Connect" button.
    1. Click on "Compass".
-   2. Note the "connection string" — you will need to use your connection string in a later step. Make sure to replace `<db_password>` with the actual database password from step 6.
+   2. Note the "connection string" — you will need to use your connection string in a later step. Make sure to replace `<db_password>` with the actual database password from step 6.
 
 {: .note }
 For simplicity, and since you're not handling sensitive data, the Network Access is set to allow connections from anywhere. However, for projects involving sensitive data, you should restrict access to only the necessary range of IP addresses.
@@ -93,7 +115,7 @@ Note: The .env file is not required for the Render.com setup. The above instruct
 1. Open the [Render Dashboard](https://dashboard.render.com/).
 2. Click on "Create new project", and create a new project with a name such as "cs4530-s26-XYY" (where XYY is your group number).
 3. From the top menu, click on the "+ New" button and click on "Web Service".
-   1. For the Source Code, choose your project repository. In case you do not see your project repository, go to your GitHub account and authorize access to your project repository.
+   1. For the Source Code, choose your group's project repository (the one Pawtograder gave you access to). In case you do not see your project repository, go to your GitHub account and authorize Render's access to your project repository.
    2. For the Name, you can EITHER choose an unique name OR use the default.
    3. For the Project, select the project created earlier. For the environment, select Production or any default value.
    4. For Language, select "Node".
@@ -104,9 +126,9 @@ Note: The .env file is not required for the Render.com setup. The above instruct
    9. For Start Command, type in `npm start`.
    10. For Instance Type, choose the "Free" option.
    11. In the Environment Variables section, add three variables:
-      - `NODE_VERSION` should be `24.13.1`
-      - `MONGO_STR` should be the connection string from the previous step
-      - `MONGO_DB_NAME` should be `GameNiteProd`.
+   - `NODE_VERSION` should be `24.13.1`
+   - `MONGO_STR` should be the connection string from the previous step
+   - `MONGO_DB_NAME` should be `GameNiteProd`.
    12. If you need to change any of these, you can do so from the tab called "Settings" (or "Environment")
 4. Click "Deploy Web Service".
 5. The URL of the your site will be displayed in purple just below near the top of the window in the "Logs" section.
