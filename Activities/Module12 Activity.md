@@ -15,8 +15,7 @@ Only one member of each team needs to complete these steps, as the resulting dep
 In this activity, we will focus on building a continuous deployment pipeline, but what about continuous integration? There are many ways to use continuous integration in your projects. For example, you can use GitHub Actions to automatically run tests after pushing a commit. GameNite has a continuous integration setup for running tests, and you can find the workflow in `.github/workflows/main.yml`.
 
 ## Changelog
-
-2026-06-02: If your GitHub Actions checks hang during `Install Playwright Dependencies`, update Playwright from `1.58.1` to `1.60.0` in `client/package.json` and rerun the workflow.
+NA
 
 ## Pre-Requisites
 
@@ -137,6 +136,9 @@ Note: The .env file is not required for the Render.com setup. The above instruct
 
 {: .note }
 Any servers running with the same `MONGO_STR` and `MONGO_DB_NAME` will share the same database. If you have multiple group members working on a similar feature, you may want to use the same database, or even the production database `GameNiteProd`. You can also pick a new `MONGO_DB_NAME` if you want to easily reset your application to the initial setup.
+
+Note: If your GitHub Actions checks hang during `Install Playwright Dependencies`, update Playwright from `1.58.1` to `1.60.0` in `client/package.json` and rerun the workflow.
+
 
 ## Grading
 
