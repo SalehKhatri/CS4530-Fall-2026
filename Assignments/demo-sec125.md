@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Demos for Section 1
+title: Demos for Sections 1, 2, & 5
 permalink: /assignments/sec-125-demos
 parent: Final Project Grading
 nav_order: 9

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Demos for Section 4
+title: Demos for Section 12
 permalink: /assignments/sec-4-demos
 parent: Final Project Grading
 nav_order: 10
