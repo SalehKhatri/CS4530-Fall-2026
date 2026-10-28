@@ -12,8 +12,8 @@ The final project deliverable is the implementation, available in github and dep
 Your final team deliverable will be a "release" of your new feature on GitHub (with tests), and will be accompanied by a demo. You will submit the link of your hosted app on Canvas.
 
 Your final team deliverable will include:
-* The implementation of your new features, deployed to Render.com or a similar service (e.g. Railway, Heroku, etc.)
-* Automated tests for your new features
+* The implementation of your new features, deployed to Render.com or a similar service (e.g. Render, Heroku, etc.)
+* Automated tests for your new features (frontend and backend)
 * A continuous integration (CI) pipeline
 * Project Plan as GitHub Projects
 * A report that describes how to use your new feature and what was completed vs proposed
@@ -60,7 +60,7 @@ Here's an [example flier from Summer 2025]({{ site.baseurl }}{% link Examples/te
 **Each flier/poster must include your group number, names of team members and click-able links to your project repo and hosted app**. Create a PDF of your flier/poster and rename it to include your project name and group number. A physical flier/poster (or printed version) is not needed. **fliers/posters will be submitted on Canvas**, under the assignment "Project: Poster / Demo".
 
 ### Project Demo/Presentation
-In addition to the poster/flier, some sections will have live (in-person) presentations or demos. Details for project demos or presentations are provided separately by each instructor under the grading rubric page (and may vary from section to section). **Copies of presentations used in demos will be submitted on Canvas**, under the assignment "Project: Poster / Demo" (if required by your instructor).
+In addition to the poster or flier, some sections will have live (in-person) presentations or demos. Details for project demos or presentations are provided separately by each instructor under the grading rubric page (and may vary from section to section). **Copies of presentations used in demos will be submitted on Canvas**, under the assignment "Project: Poster / Demo" (if required by your instructor).
 
 ### Project Showcase
 We will create a project showcase page for this semester (similar to the one from [Spring 2026](https://neu-se.github.io/CS4530-Spring-2026/assignments/project-showcase) semester). You will be asked to indicate your preference (if you don't want your project to be posted there) by completing a survey (a link will be provided in Canvas assignment "Project: Withdraw Permission for Showcase Page"). By default all projects will be posted unless your preference says otherwise. We often direct recruiters to that page. 

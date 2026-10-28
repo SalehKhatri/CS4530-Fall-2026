@@ -26,7 +26,7 @@ From [Project Overview]({{ site.baseurl }}{% link Assignments/project-overview.m
 * Product (40%)
   * 20% Successful delivery of your Minimum Viable Product as defined in your project plan
   * 10% Additional desirable features
-  * 10% Test suite of your features.
+  * 10% Test suite of your features (backend and frontend).
 * Reports (20%)
   * 10% Final Report
   * 10% Poster/flier and Demo
@@ -53,7 +53,7 @@ We will grade each of these using the following rubric:
 * Implemented features do not include any eslint-disable or ts-ignore flag
 
 ### Testing (10%)
-The project must include evidence of testing (both for front-end and back-end). Ideally, all new features will be accompanied by fully automated tests, but in some circumstances, this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy. The evidence of testing can be submitted as part of your report. Teams are welcome to make use of any testing technology (e.g. mocks, spies, etc.) or library (e.g., cypress) but we don't require the use of any specific library.
+The project must include evidence of testing (both for front-end and back-end). Ideally, all new features will be accompanied by fully automated tests, but in some circumstances, this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy. Teams are expected to make use of testing technology (i.e., vitest with mocks, spies, etc.) and testing library (i.e., playwright) discussed in this course but may use other similarly libraries. The evidence of testing can be submitted as part of your report. 
 
 #### Satisfactory:
 * Any new or modified backend features include tests that validate that the feature works as intended. These tests cover the changed code, and also contain well-written assertions that thoroughly check the expected behaviors.
@@ -144,7 +144,7 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 ## Posters/fliers and Demo (10%)
 Each team is **required** to submit a poster or flier. Details can be found on [Project Deliverables]({{ site.baseurl }}{% link Assignments/project-deliverable.md %}) page. 
 
-In addition, some sections may have a demo (live in-person). Each instructor has provided details regarding expectations for the demo and/or presentation below. The schedule and manner of these demos might also vary from section to section. The specifications for the different sections are listed below:
+**In addition**, some sections may have a demo (live in-person). Each instructor has provided details regarding expectations for the demo and/or presentation below. The schedule and manner of these demos might also vary from section to section. The specifications for the different sections are listed below:
 * [Section 1, 2 & 5 - Prof. Bhutta]({{ site.baseurl }}{% link Assignments/demo-sec125.md %})
 * [Section 12 - Prof. Wand]({{ site.baseurl }}{% link Assignments/demo-sec12.md %})
 
