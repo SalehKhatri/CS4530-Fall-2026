@@ -139,8 +139,6 @@ Any servers running with the same `MONGO_STR` and `MONGO_DB_NAME` will share the
 
 Note: If your GitHub Actions checks hang during `Install Playwright Dependencies`, update Playwright from `1.58.1` to `1.60.0` in `client/package.json` and rerun the workflow.
 
-Note: If your GitHub Actions checks fail at the `Formatting` step with a warning about `README.md`, run `npx prettier --write README.md`, then commit and push the change.
-
 
 ## Grading
 
