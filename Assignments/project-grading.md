@@ -182,3 +182,20 @@ Reflect on your team dynamic: Provide a frank (and ideally, blameless) postmorte
 * Is at least 2 paragraphs long;
 * Includes at least 1 paragraph reflecting on your own performance as a team member on this project, including what you would have done differently, given what you know now;
 * Includes at least 1 paragraph reflecting on your overall team dynamic, including strengths and weaknesses. Reflect on how you might have organized your team differently given what you know now.
+
+### Use of Artificial Intelligence
+
+Reflect on the role that AI played in your experience in this course.  
+
+How did you use AI in geneeral in this course? How do you think it affected your learning? What strategies did you use to extract learning from your use of AI? Please be honest; even if your use of AI went beyond our guidelines, it will not affect your grade.
+
+What role did AI play in your project? How much did you rely on AI for planning, coding, review, testing, etc. How did it affect the way your team worked?
+
+#### Satisfactory
+
+* Is at least 2 paragraphs long;
+* Includes at least 1 paragraph on your general use of AI throughout the course, including how you think it affected your learning.
+* Includes at least 1 paragraph on your use of AI during the project, including your specific uses of AI and its effect, if any, on the way your team functioned. 
+
+
+
