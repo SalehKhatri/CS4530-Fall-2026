@@ -20,7 +20,7 @@ All implementation will take place in the TypeScript programming language, using
 | 10/05/2026| Project Kick-off Meeting | Schedule a meeting with your Mentor TA during **this week** |
 | 10/16/2026 | [Preliminary Project Plan]({{ site.baseurl }}{% link Assignments/project-plan.md %}) | Propose a new feature for GameNite project that can be planned and implemented within 5 weeks |
 | 10/30/2026 | [Revised Project Plan]({{ site.baseurl }}{% link Assignments/revised-project-plan.md %}) | Refine the scope of your feature based on staff feedback, define detailed requirements and project acceptance criteria. |
-| 12/04/2026 | Project Delivery - Implementation and Documentation | [Deliver/Deploy]({{site.baseurl}}{% link Activities/Module12 Activity.md %}) your new features, including design documentation and tests |
+| 12/04/2026 | [Project Delivery]({{ site.baseurl }}{% link Assignments/project-deliverable.md %}) - Implementation and Documentation | [Deliver/Deploy]({{site.baseurl}}{% link Activities/Module12 Activity.md %}) your new features, including design documentation and tests |
 | 12/14/2026 | Individual Reflection | Reflect on the evolution of your project, process and team dynamics |
 
 ### Summary of Project Grading
@@ -43,7 +43,6 @@ Your overall project grade (which will account for 40% of your final grade in th
 In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the team project grade for a student (which might arise to 100% deduction for not contributing to the project at all).
 We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each students' self-reflection, and through each students' peer evaluations (during and/or at the end of the project).
 We will make regular efforts to collect and distribute this feedback throughout the project — our ultimate goal is for all students to participate and receive full marks.
-
 
 ### Team Formation
 All projects will be completed in a team of 4 students. All students in each team MUST be in the **same section** of the class.
