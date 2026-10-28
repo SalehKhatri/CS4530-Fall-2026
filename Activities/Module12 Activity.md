@@ -84,7 +84,7 @@ You will first create the MongoDB database, and then setup the continuous deploy
    3. Keep the Provider and Region the default values.
 5. Click on "Create Deployment".
 6. You will be prompted about connecting to your database.
-   1. **Copy and save the username and password that is automatically generated, as it is shown only once and cannot be retrieved later.** You'll use this username and password in a later step. (If necessary, you can create new users users after the database has been created.)
+   1. **Copy and save the username and password that is automatically generated, as it is shown only once and cannot be retrieved later.** You'll use this username and password in a later step. (If necessary, you can create new users after the database has been created.)
    2. Click on "Create Database User".
    3. Click the "Close" button.
 7. Wait for your database cluster to complete creation. Once complete, click on the "Database & Network Access" option in the left navigation (you may have to expand the "Security" section to see this), and then click on "IP Access List" under "Network Access"
@@ -112,10 +112,10 @@ Note: The .env file is not required for the Render.com setup. The above instruct
 ### Setup your Server
 
 1. Open the [Render Dashboard](https://dashboard.render.com/).
-2. Click on "Create new project", and create a new project with a name such as "cs4530-s26-XYY" (where XYY is your group number).
+2. Click on "Create new project", and create a new project with a name such as "cs4530-fa26-XYY" (where XYY is your group number).
 3. From the top menu, click on the "+ New" button and click on "Web Service".
    1. For the Source Code, choose your group's project repository (the one Pawtograder gave you access to). In case you do not see your project repository, go to your GitHub account and authorize Render's access to your project repository.
-   2. For the Name, you can EITHER choose an unique name OR use the default.
+   2. For the Name, you can EITHER choose a unique name OR use the default.
    3. For the Project, select the project created earlier. For the environment, select Production or any default value.
    4. For Language, select "Node".
    5. For Branch, select "main".
@@ -130,7 +130,7 @@ Note: The .env file is not required for the Render.com setup. The above instruct
    - `MONGO_DB_NAME` should be `GameNiteProd`.
    12. If you need to change any of these, you can do so from the tab called "Settings" (or "Environment")
 4. Click "Deploy Web Service".
-5. The URL of the your site will be displayed in purple just below near the top of the window in the "Logs" section.
+5. The URL of your site will be displayed in purple just below near the top of the window in the "Logs" section.
 6. When the logs indicate a successful deployment, you can visit the link to see your deployed site.
 7. You can check the server's logs by going to the "Logs" section: the logs are the place to check if your server is not responsive.
 
@@ -138,6 +138,8 @@ Note: The .env file is not required for the Render.com setup. The above instruct
 Any servers running with the same `MONGO_STR` and `MONGO_DB_NAME` will share the same database. If you have multiple group members working on a similar feature, you may want to use the same database, or even the production database `GameNiteProd`. You can also pick a new `MONGO_DB_NAME` if you want to easily reset your application to the initial setup.
 
 Note: If your GitHub Actions checks hang during `Install Playwright Dependencies`, update Playwright from `1.58.1` to `1.60.0` in `client/package.json` and rerun the workflow.
+
+Note: If your GitHub Actions checks fail at the `Formatting` step with a warning about `README.md`, run `npx prettier --write README.md`, then commit and push the change.
 
 
 ## Grading
